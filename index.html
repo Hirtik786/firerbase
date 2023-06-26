@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script type="module">
+      const firebaseConfig = {
+        apiKey: "AIzaSyDs2CKMiUmA2xkOKdImMEo2Elgw16hPSGo",
+        authDomain: "web-development-6e20c.firebaseapp.com",
+        databaseURL:"https://web-development-6e20c-default-rtdb.firebaseio.com",
+        projectId: "web-development-6e20c",
+        storageBucket: "web-development-6e20c.appspot.com",
+        messagingSenderId: "284418049133",
+        appId: "1:284418049133:web:76c36075a9a2880563eb64",
+        measurementId: "G-T8NRJ8B6F9",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <!-- <input type="text" id="user" placeholder="user id"> -->
+    <input type="text"  id="name" placeholder="Name" >
+    <input type="email"  id="email" placeholder="Email Address" > 
+    <input type="number"  id="number" placeholder="Mobile Number"> 
+    <button onclick="addData()">Add Data</button> 
+    <p id="message"></p>
+  </body>
+  <script src="app.js"></script>
+</html>
